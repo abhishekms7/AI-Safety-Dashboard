@@ -1,46 +1,119 @@
-# Getting Started with Create React App
+# AI Safety Incident Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Dashboard Screenshot](./screenshot.png)
 
-## Available Scripts
+A professional dashboard for tracking and managing AI safety incidents, built with React and TypeScript.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- View, filter, and sort AI safety incidents
+- Report new incidents with validation
+- Responsive design with modern UI
+- Local state management
+- Type-safe implementation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technologies Used
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Framework**: React 18
+- **Language**: TypeScript
+- **Styling**: CSS Modules
+- **Build Tool**: Create React App
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- Node.js (v16 or higher)
+- npm (v8 or higher)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/ai-safety-dashboard.git
+   cd ai-safety-dashboard
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2.Install dependencies:
+bash:
+npm install
 
-### `npm run eject`
+3.Start the development server:
+npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+4.Open http://localhost:3000 in your browser.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Available Scripts
+npm start: Runs the app in development mode
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+npm test: Launches the test runner
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+npm run build: Builds the app for production
 
-## Learn More
+npm run eject: Ejects from Create React App (not recommended)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Project Structure
+src/
+├── components/       # React components
+├── hooks/            # Custom React hooks
+├── types/            # TypeScript type definitions
+├── utils/            # Utility functions
+├── App.tsx           # Main application component
+├── index.tsx         # Application entry point
+└── App.css           # Global styles
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Design Decisions
+State Management:
+
+Used custom hooks for centralized state management
+
+Avoided external state libraries to keep the project lightweight
+
+Type Safety:
+
+Implemented strict TypeScript typing throughout
+
+Created specific types for incidents and severity levels
+
+UI/UX:
+
+Focused on clean, accessible design
+
+Implemented responsive layout with CSS Grid/Flexbox
+
+Added subtle animations for better user experience
+
+Performance:
+
+Memoized filtered/sorted incident lists
+
+Optimized component rendering
+
+Challenges & Solutions
+File Corruption Issues:
+
+Problem: Encountered TypeScript errors due to file encoding problems
+
+Solution: Recreated files with proper UTF-8 encoding and added validation
+
+Complex State Logic:
+
+Problem: Needed to manage filtering, sorting, and form state
+
+Solution: Created custom hook (useIncidents) to encapsulate all state logic
+
+Responsive Design:
+
+Problem: Ensuring good UX across all device sizes
+
+Solution: Used responsive units and mobile-first CSS approach
+
+Future Improvements
+Add user authentication
+
+Implement persistent storage (localStorage or backend API)
+
+Add charts for incident statistics
+
+Implement dark/light mode toggle
+
+  
