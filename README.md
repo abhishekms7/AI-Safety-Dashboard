@@ -1,119 +1,52 @@
-# AI Safety Incident Dashboard
+# 🚨 AI Safety Incident Dashboard
 
-![Dashboard Screenshot](./screenshot.png)
+![Dashboard Preview](./screenshot.png)
 
-A professional dashboard for tracking and managing AI safety incidents, built with React and TypeScript.
+> A professional dashboard for tracking, analyzing, and reporting AI safety incidents with robust filtering and reporting capabilities.
 
-## Features
+## ✨ Features
 
-- View, filter, and sort AI safety incidents
-- Report new incidents with validation
-- Responsive design with modern UI
-- Local state management
-- Type-safe implementation
+- **Incident Management**
+  - 📋 View all reported AI safety incidents
+  - 🔍 Filter by severity level (Low/Medium/High)
+  - ⏱️ Sort by report date (Newest/Oldest first)
+  - 📝 View detailed incident descriptions
 
-## Technologies Used
+- **Reporting System**
+  - 📝 Intuitive form for submitting new incidents
+  - ✅ Client-side validation for all fields
+  - ⚡ Real-time addition to incident list
 
-- **Framework**: React 18
-- **Language**: TypeScript
-- **Styling**: CSS Modules
-- **Build Tool**: Create React App
+- **Technical Highlights**
+  - 🛡️ Type-safe implementation
+  - 📱 Responsive design (mobile/tablet/desktop)
+  - 🧠 Local state management
+  - ♿ Accessible UI components
 
-## Getting Started
+## 🛠 Tech Stack
+
+| Category        | Technology          |
+|-----------------|---------------------|
+| Framework       | React 18            |
+| Language        | TypeScript 5+       |
+| Styling         | CSS Modules         |
+| Build Tool      | Create React App    |
+| State Management| Custom Hooks        |
+
+## 🚀 Quick Start
 
 ### Prerequisites
-
-- Node.js (v16 or higher)
-- npm (v8 or higher)
+- Node.js ≥18.x
+- npm ≥9.x or yarn ≥1.22.x
 
 ### Installation
+```bash
+# Clone the repository
+git clone https://github.com/your-username/ai-safety-dashboard.git
+cd ai-safety-dashboard
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/ai-safety-dashboard.git
-   cd ai-safety-dashboard
-
-2.Install dependencies:
-bash:
+# Install dependencies
 npm install
 
-3.Start the development server:
+# Start development server
 npm start
-
-4.Open http://localhost:3000 in your browser.
-
-Available Scripts
-npm start: Runs the app in development mode
-
-npm test: Launches the test runner
-
-npm run build: Builds the app for production
-
-npm run eject: Ejects from Create React App (not recommended)
-
-Project Structure
-src/
-├── components/       # React components
-├── hooks/            # Custom React hooks
-├── types/            # TypeScript type definitions
-├── utils/            # Utility functions
-├── App.tsx           # Main application component
-├── index.tsx         # Application entry point
-└── App.css           # Global styles
-
-Design Decisions
-State Management:
-
-Used custom hooks for centralized state management
-
-Avoided external state libraries to keep the project lightweight
-
-Type Safety:
-
-Implemented strict TypeScript typing throughout
-
-Created specific types for incidents and severity levels
-
-UI/UX:
-
-Focused on clean, accessible design
-
-Implemented responsive layout with CSS Grid/Flexbox
-
-Added subtle animations for better user experience
-
-Performance:
-
-Memoized filtered/sorted incident lists
-
-Optimized component rendering
-
-Challenges & Solutions
-File Corruption Issues:
-
-Problem: Encountered TypeScript errors due to file encoding problems
-
-Solution: Recreated files with proper UTF-8 encoding and added validation
-
-Complex State Logic:
-
-Problem: Needed to manage filtering, sorting, and form state
-
-Solution: Created custom hook (useIncidents) to encapsulate all state logic
-
-Responsive Design:
-
-Problem: Ensuring good UX across all device sizes
-
-Solution: Used responsive units and mobile-first CSS approach
-
-Future Improvements
-Add user authentication
-
-Implement persistent storage (localStorage or backend API)
-
-Add charts for incident statistics
-
-Implement dark/light mode toggle
-
-  
