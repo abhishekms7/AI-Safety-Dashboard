@@ -1,6 +1,8 @@
 # 🚨 AI Safety Incident Dashboard
 
-![Dashboard Preview](./screenshot.png)
+
+![image](https://github.com/user-attachments/assets/967b4d17-3c48-4004-a8ae-0e056b52f60c)
+
 
 > A professional dashboard for tracking, analyzing, and reporting AI safety incidents with robust filtering and reporting capabilities.
 
